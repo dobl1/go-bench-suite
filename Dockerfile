@@ -7,8 +7,8 @@ ENV GOOS=linux
 ENV GOARCH=amd64
 
 RUN apk add --no-cache git && \
-    go get -u github.com/asoorm/go-bench-suite && \
-    cd /go/src/github.com/asoorm/go-bench-suite && git checkout --force $VERSION && \
+    go get -u github.com/dobl1/go-bench-suite && \
+    cd /go/src/github.com/dobl1/go-bench-suite && git checkout --force $VERSION && \
     go install -a -ldflags="-s -w" .
 
 FROM alpine:3.19.1
