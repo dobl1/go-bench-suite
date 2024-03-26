@@ -6,6 +6,7 @@ ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GOARCH=amd64
 
+COPY go.mod ./
 RUN apk add --no-cache git && \
     go get -u github.com/dobl1/go-bench-suite && \
     cd /go/src/github.com/dobl1/go-bench-suite && git checkout --force $VERSION && \

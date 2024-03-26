@@ -211,7 +211,7 @@ go install && go-bench-suite upstream --addr 127.0.0.1:8443 --certFile ./certs/f
 
 ```bash
 docker network create bench
-docker run --rm -itd --name bench --network bench mangomm/go-bench-suite ./go-bench-suite upstream
+docker run --rm -itd --name bench dobl1/go-bench-suite ./go-bench-suite upstream
 docker run --rm -it --network bench rcmorano/docker-hey -z 30s http://bench:8000/size/10B
 ```
 

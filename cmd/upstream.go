@@ -16,9 +16,7 @@ package cmd
 
 import (
 	"fmt"
-
-	"github.com/asoorm/go-bench-suite/upstream"
-
+	"github.com/dobl1/go-bench-suite/upstream"
 	"github.com/prometheus/common/log"
 	"github.com/spf13/cobra"
 )
